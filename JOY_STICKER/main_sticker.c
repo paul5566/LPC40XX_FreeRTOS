@@ -4,12 +4,12 @@
 #include "task.h"
 
 void joysticker_task(void *p) {
-  enum StickerDir direction_status;
+  // enum StickerDir direction_status;
   bool Select_Status;
   bool Cancle_Status;
   while (1) {
-    direction_status = get_joysticker_dir();
-    Select_Status = slection();
+    joysticker__getdir();
+    Select_Status = selection();
     Cancle_Status = cancle();
     if (Select_Status == 1)
       printf("Select\n");

@@ -11,12 +11,8 @@
 
 /*enum type*/
 enum StickerDir { NONE, LEFT, RIGHT, UP, DOWN };
-/*dir_check*/
-enum StickerDir dir_check(uint16_t x_val, uint16_t y_val);
 /*get joy sticker direction*/
-enum StickerDir get_joysticker_dir(void);
+enum StickerDir joysticker__getdir(void);
 /*Get Button Status*/
-// static bool gpio1__get_level(uint8_t pin_num);
-
-bool slection(void);
+bool selection(void);
 bool cancle(void);
